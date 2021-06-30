@@ -1,8 +1,5 @@
 # $WITCHEЯ
-A currency converter built in React, supporting 166 currencies and responsive design.
-
-Say hello to ArrayAssemble! This is a sorting algorithm visualizer built in React, including
-Bubble/Insertion/Merge/Selection Sorts! Version 1.0.0 was released 05/02/21 @ 4:30PM EST.
+A currency converter built in React, supporting 165 currencies and responsive design.
 
 ----------------------------------------------------------------------------------------------------------------------------------
 >
