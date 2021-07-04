@@ -16,7 +16,7 @@ export default function Converter() {
 
     // CALLED ONLY THE FIRST TIME APPLICATION LOADS (EMPTY ARRAY AS SECOND ARGUMENT)
     useEffect(() => {
-        fetch(`/api/v7/currencies?apiKey=${process.env.REACT_APP_CURRENCY_API_KEY}`)
+        fetch(`https://free.currconv.com/api/v7/currencies?apiKey=${process.env.REACT_APP_CURRENCY_API_KEY}`)
             .then(res => res.json())
             .then(data => {
                 setUnitsList([...Object.keys(data.results)]); // Uses the Spread operator (...) to destructure the Object.keys string[] from the API data
@@ -25,7 +25,7 @@ export default function Converter() {
 
     // CALLED EVERY TIME THE FIRSTROWUNIT OR SECONDROWUNIT IS UPDATED
     useEffect(() => {
-        fetch(`/api/v7/convert?q=${firstRowUnit}_${secondRowUnit}&compact=ultra&apiKey=${process.env.REACT_APP_CURRENCY_API_KEY}`)
+        fetch(`https://free.currconv.com/api/v7/convert?q=${firstRowUnit}_${secondRowUnit}&compact=ultra&apiKey=${process.env.REACT_APP_CURRENCY_API_KEY}`)
             .then(res => res.json())
             .then(data => {
                 setConversionFactor(data[Object.keys(data)[0]].toFixed(4)); // Sets the conversion factor to the value of the first (and only) data object key
