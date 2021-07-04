@@ -7,10 +7,12 @@
     font-display: swap;
 }
 
+/***********************************************/
+
 html, body {
-    overflow-y:hidden;
-    height:100%;
-  }
+    overflow: hidden;
+    height: 100%;
+}
 
 .parent {
     position: absolute;
@@ -23,23 +25,49 @@ html, body {
 
 .header {
     background-color: #ffffff;
-    padding-top: 1.5em;
-    padding-bottom: 1em;
-    border-bottom: 4px solid #1b75bc;
     display: flex;
+    padding-top: 1em;
+    padding-bottom: 0.6em;
 }
-
 .header a {
-    display: inline-block;
     margin: auto;
 }
-
 .header img {
     transition: ease 0.3s;
+    cursor: pointer;
 }
 .header img:hover {
     height: 65px;
     margin: -2.5px;
+}
+
+.navBar {
+    background-color: #ffffff;
+    padding: 1.5em;
+    border-bottom: 4px solid #1b75bc;
+}
+.navBar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+}
+.navBar li {
+    display: inline-block;
+    transition: ease 0.3s;
+    font-family: "Geometos";
+    font-size: 1.1em;
+    vertical-align: middle;
+}
+.navBar a {
+    text-decoration: none;
+    color: black;
+    transition: ease 0.3s;
+}
+.navBar a:hover {
+    color: #1b75bc;
+    letter-spacing: 0.1rem;
 }
 
 .convertHeadline {
@@ -155,10 +183,9 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 }
 
 .decoration {
-    background-image: url('./SVG/currencybackground.svg');
     background-size: cover;
     height: 45em;
-    margin-top: 7em;
+    margin-top: 3.5em;
     opacity: 30%;
 }
 
@@ -175,5 +202,21 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
         font-size: 1.3em;
         padding-top: 1.5em;
         padding-bottom: 0em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        padding-bottom: 0em;
+    }
+
+    .navBar li {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (min-height: 800px) {
+    .decoration {
+        margin-top: 6em;
     }
 }

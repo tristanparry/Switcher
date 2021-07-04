@@ -3,9 +3,9 @@ import './App.css'
 
 export default function Row(props) {
     const {
-        currencyTypesList,
-        selectedCurrency,
-        currencyChange,
+        unitsList,
+        selectedUnit,
+        unitChange,
         amount,
         amountChange
     } = props // Retrieves the passed props from the Converter functional component
@@ -13,12 +13,12 @@ export default function Row(props) {
     return (
         <>
             <div className="row">
-            <input type="number" value={amount} onChange={amountChange}></input>
-            <select value={selectedCurrency} onChange={currencyChange}>
-                {currencyTypesList.map(currency => (
-                    <option key={currency} value={currency}>{currency}</option> // Maps the currencyTypes array, for each currency, a select option is returned
-                ))}
-            </select>
+                <input type="number" value={amount} onChange={amountChange}></input>
+                <select value={selectedUnit} onChange={unitChange}>
+                    {unitsList.map(unit => (
+                        <option key={unit} value={unit}>{unit}</option> // Maps the units array, for each unit, a select option is returned
+                    ))}
+                </select>
             </div>
         </>
     )
