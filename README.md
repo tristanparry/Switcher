@@ -1,5 +1,5 @@
-# $WITCHEЯ
-A currency converter built in React, supporting 165 currencies and responsive design.
+# SWITCHEЯ
+A unit converter app built in React, supporting currency/length/volume/time conversion, and responsive design
 
 ----------------------------------------------------------------------------------------------------------------------------------
 >
@@ -10,4 +10,4 @@ A currency converter built in React, supporting 165 currencies and responsive de
 >
 ----------------------------------------------------------------------------------------------------------------------------------
 
-$WITCHEЯ -- Developed by Tristan Parry, 2021
+SWITCHEЯ -- Developed by Tristan Parry, 2021
