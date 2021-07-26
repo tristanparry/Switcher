@@ -1,3 +1,4 @@
+![switcher](https://user-images.githubusercontent.com/64918749/126927858-864540a8-a171-4b29-b27b-77d089024979.png)
 # SWITCHEЯ
 A unit converter app built in React, supporting currency/length/volume/time conversion, and responsive design
 
