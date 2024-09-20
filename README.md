@@ -11,9 +11,6 @@ A unit converter app built in React, supporting currency/length/volume/time conv
 > ![image](https://user-images.githubusercontent.com/64918749/124390481-d83f0000-dcb9-11eb-838f-aade27ffc146.png)
 > 
 > ![image](https://user-images.githubusercontent.com/64918749/124390492-e3922b80-dcb9-11eb-8150-4dc6221444de.png)
-> 
-> Currently being hosted as a Heroku app:
-> https://switcher-app.herokuapp.com/
 >
 ----------------------------------------------------------------------------------------------------------------------------------
 
